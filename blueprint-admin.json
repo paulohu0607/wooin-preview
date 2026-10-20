@@ -8,6 +8,7 @@
 	"features": {
 		"networking": true
 	},
+	"login": true,
 	"steps": [
 		{
 			"step": "setSiteLanguage",
@@ -90,6 +91,5 @@
 			"step": "runPHP",
 			"code": "<?php define( 'WOOIN_PREVIEW', true ); require '/wordpress/dev/seed.php';"
 		}
-	],
-	"login": true
+	]
 }
