@@ -1,0 +1,94 @@
+{
+	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
+	"landingPage": "/",
+	"preferredVersions": {
+		"php": "8.3",
+		"wp": "6.8"
+	},
+	"features": {
+		"networking": true
+	},
+	"steps": [
+		{
+			"step": "setSiteLanguage",
+			"language": "ko_KR"
+		},
+		{
+			"step": "setSiteOptions",
+			"options": {
+				"blogname": "법률사무소 우인",
+				"blogdescription": "개인회생 · 개인파산 · 법인회생 · 법인파산 이서영 변호사",
+				"permalink_structure": "/%postname%/",
+				"timezone_string": "Asia/Seoul",
+				"wooin_site_info": {
+					"brand_name": "법률사무소 우인",
+					"phone_display": "1899-1440",
+					"address": "(16514) 경기 수원시 영통구 법조로 25, 오피스 A동 2016호",
+					"hours": "월~목 09:00~18:00 · 금 09:00~11:50 (점심 11:50~13:10, 주말·공휴일 제외)",
+					"email": "",
+					"youtube_url": "https://www.youtube.com/@이서영변호사빚연구소",
+					"kakao_url": "",
+					"cafe_url": "https://cafe.naver.com/18997754",
+					"callback_tail": "0257"
+				},
+				"wooin_youtube": {
+					"channel_id": "UCzb5UFkYRYRm6T0TQnCQd6Q",
+					"channel_url": "https://www.youtube.com/@이서영변호사빚연구소",
+					"channel_name": "이서영변호사의 회생파산연구소",
+					"subscribers": "구독자 10.1만명",
+					"description": "빚만 연구한 빚 전문 변호사가 채무자에게 최적의 솔루션을 찾아드립니다.",
+					"playlists": [
+						"PLbvZ-ZgskpAhflcQPgbcLshTgoyIW5zWx",
+						"PLbvZ-ZgskpAh0fujeaz2OzlEPMd8yDsNb",
+						"PLbvZ-ZgskpAjFnUvkEkW4TUQT6LJaNVXS",
+						"PLbvZ-ZgskpAg1MhJaFXZy0zZsO6x4bt41",
+						"PLbvZ-ZgskpAhtcbiyXbwwVTG2-DKoo_4x",
+						"PLbvZ-ZgskpAiFiDkehYt7a7KI2X5z0sEl",
+						"PLbvZ-ZgskpAiRsleQ9M-Lm_UlqJIcdUQ0",
+						"PLbvZ-ZgskpAgz3eG5Z1-K4YH4lN_Qz41o",
+						"PLbvZ-ZgskpAhtI96TnXgOogMQK_BOEq0N",
+						"PLbvZ-ZgskpAgzNF8kclKqHtc8u-HUusuc",
+						"PLbvZ-ZgskpAi-ci4-fwxcmuZJQfxRq-AC"
+					]
+				},
+				"blog_public": 0
+			}
+		},
+		{
+			"step": "installTheme",
+			"themeData": {
+				"resource": "url",
+				"url": "https://paulohu0607.github.io/wooin-preview/wooin.zip"
+			},
+			"options": {
+				"activate": true
+			}
+		},
+		{
+			"step": "installPlugin",
+			"pluginData": {
+				"resource": "url",
+				"url": "https://paulohu0607.github.io/wooin-preview/wooin-core.zip"
+			},
+			"options": {
+				"activate": true
+			}
+		},
+		{
+			"step": "mkdir",
+			"path": "/wordpress/dev"
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/dev/seed.php",
+			"data": {
+				"resource": "url",
+				"url": "https://paulohu0607.github.io/wooin-preview/seed.php"
+			}
+		},
+		{
+			"step": "runPHP",
+			"code": "<?php define( 'WOOIN_PREVIEW', true ); require '/wordpress/dev/seed.php';"
+		}
+	]
+}
