@@ -144,7 +144,7 @@ foreach ( array( 'corporate-bankruptcy' => '법인파산', 'personal-rehabilitat
 	}
 }
 
-// ---------------------------------------------------------------- 우인 소식 (게시판 — 공지 고정 확인용 샘플 1건. 실제 소식으로 교체)
+// ---------------------------------------------------------------- 우인 소식 (게시판 — 구분: 우인 소식 / 도산 소식. 공지 고정 · 구분 확인용 샘플 2건, 실제 소식으로 교체)
 $notice = wp_insert_post(
 	array(
 		'post_type'    => 'wooin_news',
@@ -154,6 +154,18 @@ $notice = wp_insert_post(
 	)
 );
 update_post_meta( $notice, 'pinned', true );
+wooin_news_default_terms();
+wp_set_object_terms( $notice, 'wooin', 'wooin_news_cat' );
+$sample_news = wp_insert_post(
+	array(
+		'post_type'    => 'wooin_news',
+		'post_status'  => 'publish',
+		'post_title'   => '[샘플] 도산 소식 예시 — 법원 · 제도 변경 안내 자리',
+		'post_content' => '<!-- wp:paragraph {"className":"wooin-placeholder"} --><p class="wooin-placeholder">회생법원 운영 변경, 제도 개정 등 도산 관련 소식을 올리는 자리입니다. 실제 원고로 교체합니다.</p><!-- /wp:paragraph -->',
+		'post_date'    => gmdate( 'Y-m-d H:i:s', time() - 3600 ),
+	)
+);
+wp_set_object_terms( $sample_news, 'insolvency', 'wooin_news_cat' );
 
 // ---------------------------------------------------------------- 해결 사례 (wooin.net 공개 성공사례 — 표기 그대로)
 $cases = array(
