@@ -17,7 +17,7 @@
 			"step": "setSiteOptions",
 			"options": {
 				"blogname": "법률사무소 우인",
-				"blogdescription": "개인회생 · 개인파산 · 법인회생 · 법인파산 이서영 변호사",
+				"blogdescription": "법인회생 · 법인파산 · 개인회생 · 개인파산 이서영 변호사",
 				"permalink_structure": "/%postname%/",
 				"timezone_string": "Asia/Seoul",
 				"wooin_site_info": {
@@ -49,6 +49,13 @@
 						"PLbvZ-ZgskpAhtI96TnXgOogMQK_BOEq0N",
 						"PLbvZ-ZgskpAgzNF8kclKqHtc8u-HUusuc",
 						"PLbvZ-ZgskpAi-ci4-fwxcmuZJQfxRq-AC"
+					],
+					"channels": [
+						[
+							"UCFRQIg7YLXa7bJuDVXBahFg",
+							"회생1타강사 이서영변호사",
+							"https://www.youtube.com/@이서영변호사"
+						]
 					]
 				},
 				"blog_public": 0
@@ -58,7 +65,7 @@
 			"step": "installTheme",
 			"themeData": {
 				"resource": "url",
-				"url": "https://paulohu0607.github.io/wooin-preview/wooin.zip?v=1792624074699"
+				"url": "https://paulohu0607.github.io/wooin-preview/wooin.zip?v=1792952174201"
 			},
 			"options": {
 				"activate": true
@@ -68,7 +75,7 @@
 			"step": "installPlugin",
 			"pluginData": {
 				"resource": "url",
-				"url": "https://paulohu0607.github.io/wooin-preview/wooin-core.zip?v=1792624074699"
+				"url": "https://paulohu0607.github.io/wooin-preview/wooin-core.zip?v=1792952174201"
 			},
 			"options": {
 				"activate": true
@@ -83,7 +90,23 @@
 			"path": "/wordpress/dev/seed.php",
 			"data": {
 				"resource": "url",
-				"url": "https://paulohu0607.github.io/wooin-preview/seed.php?v=1792624074699"
+				"url": "https://paulohu0607.github.io/wooin-preview/seed.php?v=1792952174201"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/dev/faq-corporate.json",
+			"data": {
+				"resource": "url",
+				"url": "https://paulohu0607.github.io/wooin-preview/faq-corporate.json?v=1792952174201"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/dev/videos-sample.json",
+			"data": {
+				"resource": "url",
+				"url": "https://paulohu0607.github.io/wooin-preview/videos-sample.json?v=1792952174201"
 			}
 		},
 		{
