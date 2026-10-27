@@ -65,7 +65,7 @@
 			"step": "installTheme",
 			"themeData": {
 				"resource": "url",
-				"url": "https://paulohu0607.github.io/wooin-preview/wooin.zip?v=1792953006430"
+				"url": "https://paulohu0607.github.io/wooin-preview/wooin.zip?v=1793131147018"
 			},
 			"options": {
 				"activate": true
@@ -75,7 +75,7 @@
 			"step": "installPlugin",
 			"pluginData": {
 				"resource": "url",
-				"url": "https://paulohu0607.github.io/wooin-preview/wooin-core.zip?v=1792953006430"
+				"url": "https://paulohu0607.github.io/wooin-preview/wooin-core.zip?v=1793131147018"
 			},
 			"options": {
 				"activate": true
@@ -90,7 +90,7 @@
 			"path": "/wordpress/dev/seed.php",
 			"data": {
 				"resource": "url",
-				"url": "https://paulohu0607.github.io/wooin-preview/seed.php?v=1792953006430"
+				"url": "https://paulohu0607.github.io/wooin-preview/seed.php?v=1793131147018"
 			}
 		},
 		{
@@ -98,7 +98,7 @@
 			"path": "/wordpress/dev/faq-corporate.json",
 			"data": {
 				"resource": "url",
-				"url": "https://paulohu0607.github.io/wooin-preview/faq-corporate.json?v=1792953006430"
+				"url": "https://paulohu0607.github.io/wooin-preview/faq-corporate.json?v=1793131147018"
 			}
 		},
 		{
@@ -106,7 +106,7 @@
 			"path": "/wordpress/dev/videos-sample.json",
 			"data": {
 				"resource": "url",
-				"url": "https://paulohu0607.github.io/wooin-preview/videos-sample.json?v=1792953006430"
+				"url": "https://paulohu0607.github.io/wooin-preview/videos-sample.json?v=1793131147018"
 			}
 		},
 		{
