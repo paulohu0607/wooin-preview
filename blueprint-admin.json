@@ -28,8 +28,7 @@
 					"email": "",
 					"youtube_url": "https://www.youtube.com/@이서영변호사빚연구소",
 					"kakao_url": "",
-					"cafe_url": "https://cafe.naver.com/18997754",
-					"callback_tail": "0257"
+					"cafe_url": "https://cafe.naver.com/18997754"
 				},
 				"wooin_youtube": {
 					"channel_id": "UCzb5UFkYRYRm6T0TQnCQd6Q",
@@ -65,7 +64,7 @@
 			"step": "installTheme",
 			"themeData": {
 				"resource": "url",
-				"url": "https://paulohu0607.github.io/wooin-preview/wooin.zip?v=1793132187691"
+				"url": "https://paulohu0607.github.io/wooin-preview/wooin.zip?v=1794063704156"
 			},
 			"options": {
 				"activate": true
@@ -75,7 +74,17 @@
 			"step": "installPlugin",
 			"pluginData": {
 				"resource": "url",
-				"url": "https://paulohu0607.github.io/wooin-preview/wooin-core.zip?v=1793132187691"
+				"url": "https://paulohu0607.github.io/wooin-preview/wooin-core.zip?v=1794063704156"
+			},
+			"options": {
+				"activate": true
+			}
+		},
+		{
+			"step": "installPlugin",
+			"pluginData": {
+				"resource": "url",
+				"url": "https://paulohu0607.github.io/wooin-preview/wooin-consult.zip?v=1794063704156"
 			},
 			"options": {
 				"activate": true
@@ -90,15 +99,7 @@
 			"path": "/wordpress/dev/seed.php",
 			"data": {
 				"resource": "url",
-				"url": "https://paulohu0607.github.io/wooin-preview/seed.php?v=1793132187691"
-			}
-		},
-		{
-			"step": "writeFile",
-			"path": "/wordpress/dev/faq-corporate.json",
-			"data": {
-				"resource": "url",
-				"url": "https://paulohu0607.github.io/wooin-preview/faq-corporate.json?v=1793132187691"
+				"url": "https://paulohu0607.github.io/wooin-preview/seed.php?v=1794063704156"
 			}
 		},
 		{
@@ -106,7 +107,7 @@
 			"path": "/wordpress/dev/videos-sample.json",
 			"data": {
 				"resource": "url",
-				"url": "https://paulohu0607.github.io/wooin-preview/videos-sample.json?v=1793132187691"
+				"url": "https://paulohu0607.github.io/wooin-preview/videos-sample.json?v=1794063704156"
 			}
 		},
 		{
